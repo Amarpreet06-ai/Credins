@@ -1,0 +1,478 @@
+body {
+  font-family: "Krub", sans-serif;
+  margin: 0;
+}
+
+
+/* Header styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 24px;
+  background-color: #ffffff;
+  color: black;
+}
+
+.logo img {
+  width: 140px; /* Adjust logo size */
+  height: auto;
+}
+
+/* Menu Icon */
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon .bar {
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
+  background-color: rgb(0, 0, 0);
+}
+
+/* Sidebar Styles */
+.nav-links {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Initially hide the sidebar by positioning it off-screen */
+  width: 250px;
+  height: 100%;
+  background-color: #108988;
+  color: #F28A21;
+  transition: left 0.3s ease-in-out; /* Smooth transition for sliding */
+  padding-top: 60px; /* Adjust padding to align the menu items */
+}
+
+.nav-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+}
+
+.nav-links a:hover {
+  background-color:#F28A21;
+}
+
+/* Show sidebar when 'active' class is added */
+.nav-links.active {
+  left: 0; /* Slide in the sidebar */
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+  .nav-links ul {
+    flex-direction: column;
+    font-size: 0.9rem; /* Adjust font size for smaller devices */
+    width: 90%;
+  }
+}
+.help-text {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.struggling {
+  font-weight: bold;
+  font-size: 20px;
+  color: #108988;
+}
+
+.help {
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+}
+
+.Applytoday{
+  color: black;
+  font-size: 16px;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+button {
+  padding: 8px 24px;
+  font-size: 16px;
+  background-color: #108988;
+  color: white;
+  border:none;
+  cursor: pointer;
+  border-radius: 12px;
+
+}
+
+button:hover {
+  background-color: #F28A21;
+}
+
+.help {
+  font-weight: bold;
+  color: black;
+  font-size: 120%;}
+
+.Exploreoptions {
+  color: #F28A21;
+  font-weight: bold; 
+  font-size: 22px
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  height: 30vh;        
+}
+
+/* Styling for the imagecontainer */
+/* Styling for the imagecontainer */
+.imagecontainer {
+  display: flex;
+  justify-content: center; /* Center the container horizontally */
+  align-items: center; /* Center the container vertically */
+  height: 30vh; /* Adjust height as needed */
+}
+
+/* Styling for the container holding the image and text */
+.Container {
+  width: 322px; /* Adjust as needed */
+  height: auto; /* Height will adjust based on content */
+  background-color: rgb(243 243 243); /* Background color */
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column; /* Stack the image and text vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  padding: 20px; /* Add some padding around content */
+}
+
+/* Styling for the rupee image */
+.rupee-Image {
+  width: 35%; /* Adjust the size of the image */
+  height: 65px; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image scales properly */
+  margin-bottom: 10px; /* Add space between image and text */
+}
+
+/* Styling for the Personalloan text */
+.Personalloan {
+  font-size: 16px; /* Adjust text size */
+  color: #108988; /* Text color */
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center the text */
+  margin-top: 0; /* Ensure no margin at the top */
+}
+
+.arrow{
+  color: #F28A21;
+}
+.Home-Image {
+  width: 35%; /* Adjust the size of the image */
+  height: 65px; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image scales properly */
+  margin-bottom: 10px; /* Add space between image and text */
+}
+
+/* Styling for the Personalloan text */
+.HomeLoan {
+  font-size: 16px; /* Adjust text size */
+  color: #108988; /* Text color */
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center the text */
+  margin-top: 0; /* Ensure no margin at the top */
+}
+
+.arrow{
+  color: #F28A21;}
+
+  .Business-Image {
+    width: 35%; /* Adjust the size of the image */
+    height: 65px; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image scales properly */
+    margin-bottom: 10px; /* Add space between image and text */
+  }
+  
+  /* Styling for the Personalloan text */
+  .Businessloan {
+    font-size: 16px; /* Adjust text size */
+    color: #108988; /* Text color */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center the text */
+    margin-top: 0; /* Ensure no margin at the top */
+  }
+  
+  .arrow{
+    color: #F28A21;}
+
+    .Car-Image {
+      width: 35%; /* Adjust the size of the image */
+      height: 65px; /* Maintain aspect ratio */
+      object-fit: contain; /* Ensure the image scales properly */
+      margin-bottom: 10px; /* Add space between image and text */
+    }
+    
+    /* Styling for the Personalloan text */
+    .Carloan {
+      font-size: 16px; /* Adjust text size */
+      color: #108988; /* Text color */
+      font-weight: bold; /* Make the text bold */
+      text-align: center; /* Center the text */
+      margin-top: 0; /* Ensure no margin at the top */
+    }
+    
+    .arrow{
+      color: #F28A21;}
+
+      .TW-Image {
+        width: 35%; /* Adjust the size of the image */
+        height: 65px; /* Maintain aspect ratio */
+        object-fit: contain; /* Ensure the image scales properly */
+        margin-bottom: 10px; /* Add space between image and text */
+      }
+      
+      /* Styling for the Personalloan text */
+      .TWloan {
+        font-size: 16px; /* Adjust text size */
+        color: #108988; /* Text color */
+        font-weight: bold; /* Make the text bold */
+        text-align: center; /* Center the text */
+        margin-top: 0; /* Ensure no margin at the top */
+      }
+      
+      .arrow{
+        color: #F28A21;}
+
+        .Credins {
+          font-size: 20px; /* Adjust text size */
+          color:black; /* Text color */
+          font-weight: bold; /* Make the text bold */
+          text-align: center; /* Center the text */
+          margin-top: 0; /* Ensure no margin at the top */
+        }
+        
+        .Benifits {
+          font-size: 20px; /* Adjust text size */
+          color: #F28A21; /* Text color */
+          font-weight: bold; /* Make the text bold */
+          text-align: center; /* Center the text */
+          margin-top: 0; /* Ensure no margin at the top */
+        }
+
+        .Credinsbenefits {
+  text-align: center;
+  margin-top: 15px;
+}
+        
+.BenefitsCont {
+  display: flex;
+  justify-content: center; /* Center the container horizontally */
+  align-items: center; /* Center the container vertically */
+  height: 50vh; /* Adjust height as needed */
+  position: relative; /* Ensure absolute positioning works within this container */
+}
+
+/* Styling for the container holding the image and text */
+.BenefitsCont1 {
+  width: 322px; /* Adjust as needed */
+  height: 400px; /* Height will adjust based on content */
+  background-color: rgb(243 243 243); /* Background color */
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column; /* Stack the image and text vertically */
+  justify-content: flex-start; /* Align content from top */
+  padding: 20px; /* Add some padding around content */
+  position: relative; /* This ensures absolute positioning within this container */
+}
+
+.BenefitsPara {
+  font-size: 15px;
+  width: 99%; /* Adjust the width of the paragraph */
+  margin: 0; /* Centers the paragraph horizontally */
+  text-align: center; /* Centers the text inside the paragraph */
+  margin-bottom: 10px;
+}
+
+.MFO,
+.BIO,
+.FP,
+.EMIO {
+  position: absolute;
+}
+
+.MFO {
+  top: 10px; /* Place image at the upper-left side */
+  left: 10px;
+}
+
+.MF-Image {
+  width: 100px;  /* Adjust the size of the image */
+  height: 65px; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image scales properly */
+  margin-top: 135px;
+}
+
+.MFoptions {
+  font-size: 16px; /* Adjust text size */
+  color: #108988; /* Text color */
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center the text */
+  margin-top: 10px; /* Space between image and text */
+}
+
+.BIO {
+  bottom: 10px; /* Place image at the bottom-left side */
+  left: 10px;
+}
+
+.BT-Image {
+  width: 100px; /* Adjust the size of the image */
+  height: 65px; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image scales properly */
+}
+
+.BIR {
+  font-size: 16px; /* Adjust text size */
+  color: #108988; /* Text color */
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center the text */
+  margin-top: 10px; /* Space between image and text */
+}
+
+.FP {
+  top: 10px; /* Place image at the upper-right side */
+  right: 10px;
+}
+
+.FP-Image {
+  width: 100px; /* Adjust the size of the image */
+  height: 65px; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image scales properly */
+  margin-top: 135px;
+}
+
+.FPT {
+  font-size: 16px; /* Adjust text size */
+  color: #108988; /* Text color */
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center the text */
+  margin-top: 10px; /* Space between image and text */
+}
+
+.EMIO {
+  bottom: 10px; /* Place image at the bottom-right side */
+  right: 10px;
+}
+
+.EMI-Image {
+  width: 100px; /* Adjust the size of the image */
+  height: 65px; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image scales properly */
+}
+
+.EMIT {
+  font-size: 16px; /* Adjust text size */
+  color: #108988; /* Text color */
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center the text */
+  margin-top: 10px; /* Space between image and text */
+}
+
+
+.OurSP {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.Our {
+  font-size: 20px; /* Adjust text size */
+  color:#108988; /* Text color */
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center the text */
+  margin-top: 0; /* Ensure no margin at the top */
+}
+
+.Seamless {
+  font-size: 20px; /* Adjust text size */
+  color: #F28A21; /* Text color */
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center the text */
+  margin-top: 0; /* Ensure no margin at the top */
+}
+
+.Seamless1 {
+  display: flex;
+  justify-content: center; /* Center the container horizontally */
+  align-items: center; /* Center the container vertically */
+  height: 70vh; /* Adjust height as needed */
+  position: relative; /* Ensure absolute positioning works within this container */
+}
+
+/* Styling for the container holding the image and text */
+.Seamless2 {
+  width: 322px; /* Adjust as needed */
+  height: 455px; /* Height will adjust based on content */
+  background-color: rgb(243 243 243); /* Background color */
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column; /* Stack the image and text vertically */
+  justify-content: flex-start; /* Align content from top */
+  padding: 20px; /* Add some padding around content */
+  position: relative; /* This ensures absolute positioning within this container */
+}
+
+.Elgb {
+  top: 10px; /* Place image at the upper-left side */
+  left: 10px;
+}
+
+/* Circle container for the image */
+.ImageCircle {
+  width: 83px; /* Adjust the size of the circle */
+  height: 76px; /* Make it a perfect circle */
+  border-radius: 50%; /* Ensure the container is circular */
+  border: 1px solid #F28A21; /* Orange border */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  overflow: hidden; /* Ensures the image fits within the circle */
+  margin-top: 0px; /* Position the circle image properly */
+  background-color: #ffffff;
+  align-items: center;
+  margin-left: 120px;
+}
+
+.EC-Image {
+  width: 100px;  /* Adjust the size of the image */
+  height: 40px; /* Ensure the image fits within the circle */
+  object-fit: contain; /* Ensure the image scales properly */
+  margin-bottom: 2px;
+}
+
+.ECT {
+  font-size: 16px; /* Adjust text size */
+  color: #108988; /* Text color */
+  text-align: center; /* Center the text */
+  font-weight: 550;
+  margin-top: 10px; /* Space between image and text */
+  font-family: "Krub", sans-serif;
+}
